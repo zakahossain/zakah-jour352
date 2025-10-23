@@ -1,0 +1,228 @@
+#banner {
+    width: 100%;
+    max-width: 1200px;  /* Matches your content max-width */
+    display: block;
+    margin: 0 auto;     /* Centers the banner */
+}
+
+/* body styling with Helvetica font stack as instructed */
+
+/* Main headline - using Playfair Display at my discretion for elegant serif style */
+h1 {
+    font-family: 'Playfair Display','Georgia', 'Times New Roman', serif;
+    font-size: 48px;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #1a5c3a;
+    padding-bottom: 20px;
+    text-align: center;  
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 16px; 
+    line-height: 1.8;
+    color: #2c2c2c;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Content wrapper - centers the story column on the page */
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 200px;
+    background-color: #ffffff;
+}
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 48px; 
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #1a5c3a;
+    padding-bottom: 20px;
+}
+
+
+
+.deck {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 25px;
+    padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Byline and date - smaller than main headline as required */
+#byline {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px; /* Smaller than 48px main headline */
+    font-style: italic;
+    color: #777;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Paragraph text - Helvetica with required fallbacks and size */
+p {
+    font-family: Helvetica, Arial, sans-serif; /* Required: Helvetica, Arial backup, sans-serif final backup */
+    font-size: 16px; /* Required: 12px or larger (set to 16px) */
+    line-height: 1.8;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+/* H2 Subheadings - specific font family and size as required */
+h2 {
+    font-family: Georgia, 'Times New Roman', serif; /* Required: font family set */
+    font-size: 32px; /* Required: font size set */
+    color: #1a5c3a;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-left: 6px solid #b8905a;
+    padding-left: 20px;
+    line-height: 1.3;
+}
+
+/* H3 for Related Stories */
+h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #1a5c3a;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* Image captions */
+i {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Pullquote styling - at least 2 different styling choices from body text */
+blockquote {
+    font-family: Georgia, serif; /* DIFFERENT from body: serif vs sans-serif */
+    font-size: 26px; /* DIFFERENT from body: 26px vs 16px */
+    font-style: italic;
+    font-weight: 500;
+    color: #1a5c3a;
+    border-left: 6px solid #b8905a;
+    border-right: 6px solid #b8905a;
+    padding: 30px 40px;
+    margin: 50px 40px;
+    background: linear-gradient(to right, #f9f9f9 0%, #ffffff 100%);
+    line-height: 1.5;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+a {
+    color: #1a5c3a;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #b8905a;
+    border-bottom: 1px solid #b8905a;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1000px) 
+    #content {
+        padding: 30px 40px;
+    }
+
+    p {
+        margin-left: 50px;  
+        margin-right: 50px;  
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    #content {
+        padding: 20px 30px;
+    }
+    
+     p {
+        margin-left: 20px;  
+        margin-right: 20px;  /* ADD: Further reduce paragraph spacing */
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    blockquote {
+        font-size: 22px;
+        padding: 25px 20px;
+        margin: 40px 20px;
+    }
+}
+
+/* Bootstrap card customization to match site brand colours */
+.card {
+    border-color: #1a5c3a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(26, 92, 58, 0.2) !important;
+}
+
+.card-title {
+    color: #1a5c3a;
+    font-family: Georgia, serif;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #2c2c2c;
+    font-size: 15px;
+}
+
+.btn-success {
+    background-color: #1a5c3a;
+    border-color: #1a5c3a;
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background-color: #b8905a;
+    border-color: #b8905a;
+}
+
+/* Container spacing for cards section */
+.container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
