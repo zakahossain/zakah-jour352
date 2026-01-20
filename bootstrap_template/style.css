@@ -1,0 +1,31 @@
+/* Apply Special Elite font */
+h1, h2, h3, .navbar-brand, .btn {
+  font-family: 'Special Elite', cursive;
+}
+
+/* Add padding to rows */
+.row {
+  padding-bottom: 50px;
+}
+
+/* Center content in columns */
+.text-center-column {
+  text-align: center;
+}
+
+/* Icon sizing */
+.icon-large {
+  font-size: 3em;
+}
+
+/* Media query for screens below 500px */
+@media only screen and (max-width: 500px) {
+  h2 {
+    padding-top: 50px;
+  }
+  
+  .btn {
+    background-color: teal !important;
+    border-color: teal !important;
+  }
+}
