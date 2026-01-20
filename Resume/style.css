@@ -1,0 +1,68 @@
+/* styles for my resume */
+
+/* pulling in open sans from google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* setting up defaults - making everything use open sans, 1em, dark gray */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1em;
+    color: #444;
+    font-weight: 400;
+}
+
+/* HERE: making name big (3em), blue, uppercase, centered */
+h1 {
+    font-size: 3em !important;
+    color: #33485e !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* hiding the photo */
+img {
+    display: none;
+}
+
+/* NOW doing the title under name - the strong tag in first p */
+body > p:first-of-type strong {
+    font-size: 1.5em;
+    color: #33485e;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+}
+
+/* section titles get blue background, white text, uppercase */
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #33485e;
+    color: white;
+    font-weight: 400;
+}
+
+/* job titles - h3 tags, bump up to 600 weight and 1.5em */
+h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+/* organizations - h4 tags, stay at 400 weight but 1.5em size */
+h4 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/* dates - h5 tags, italicize these, keep at 1em */
+h5 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+}
+
+/* list stuff - contact/skills/education already 1em from body defaults */
+ul li {
+    font-size: 1em;
+}
