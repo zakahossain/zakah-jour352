@@ -4,20 +4,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 /* setting up defaults - making everything use open sans, 1em, dark gray */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+body, div, p, ul, ol, li {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1em;
     color: #444;
     font-weight: 400;
 }
 
-/* HERE: making name big (3em), blue, uppercase, centered */
-h1 {
-    font-size: 3em !important;
-    color: #33485e !important;
+/* container wrapping the whole document - centered with max width */
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* name div - big blue uppercase centered with bottom border */
+#name {
+    font-size: 3em;
+    color: #33485e;
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
+    border-bottom: 1px solid #33485e;
+    width: 60%;
+    min-width: 300px;
+    margin: 0 auto;
 }
 
 /* hiding the photo */
@@ -25,44 +37,78 @@ img {
     display: none;
 }
 
-/* NOW doing the title under name - the strong tag in first p */
-body > p:first-of-type strong {
+/* title under name - bold and centered */
+#title {
     font-size: 1.5em;
     color: #33485e;
     text-transform: uppercase;
-    font-weight: 400;
-    display: block;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0 0 0;
 }
 
-/* section titles get blue background, white text, uppercase */
-h2 {
+/* section headers - blue background white text uppercase */
+.sectionheader {
     font-size: 1.5em;
     text-transform: uppercase;
     background-color: #33485e;
     color: white;
     font-weight: 400;
+    margin: 20px 0 10px 0;
+    width: 70%;
+    min-width: 300px;
 }
 
-/* job titles - h3 tags, bump up to 600 weight and 1.5em */
-h3 {
+/* job titles - bold and bigger */
+.jobtitle {
     font-weight: 600;
     font-size: 1.5em;
 }
 
-/* organizations - h4 tags, stay at 400 weight but 1.5em size */
-h4 {
+/* organizations - slightly smaller than before */
+.organization {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
-/* dates - h5 tags, italicize these, keep at 1em */
-h5 {
+/* dates - italic with tight margins */
+.date {
     font-weight: 400;
     font-style: italic;
     font-size: 1em;
+    margin: 2px 0 0 0;
 }
 
-/* list stuff - contact/skills/education already 1em from body defaults */
-ul li {
-    font-size: 1em;
+/* description paragraphs - spacing top and bottom */
+.description {
+    margin: 10px 0 10px 0;
+}
+
+/* contact menu list - centered with no padding or margin */
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* menu list items - display inline so they're horizontal */
+.menu li {
+    display: inline;
+}
+
+/* education list - small top margin */
+#degrees {
+    margin: 5px 0 0 0;
+}
+
+/* skills list - small top margin */
+#do {
+    margin: 5px 0 0 0;
+}
+
+/* mission statement at top - centered with width constraints */
+.top {
+    width: 60%;
+    min-width: 300px;
+    margin: 0 auto 30px auto;
 }
