@@ -1,0 +1,365 @@
+/* ================================
+   DATA VISUALIZATIONS ASSIGNMENT
+   JOUR652 - University of Maryland
+   ================================ */
+
+:root {
+    --font-body: Georgia, 'Times New Roman', serif;
+    --font-headline: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+    
+    --color-black: #000000;
+    --color-text: #1a1a1a;
+    --color-gray: #666666;
+    --color-light-gray: #999999;
+    --color-border: #e0e0e0;
+    --color-accent: #DC143C;
+    --color-bg: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-text);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ================================
+   ASSIGNMENT HEADER
+   ================================ */
+
+.assignment-header {
+    background: #ffffff;
+    padding: 4rem 0 3rem;
+    border-bottom: 4px solid var(--color-black);
+    margin-bottom: 4rem;
+}
+
+.header-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+}
+
+.assignment-title {
+    font-family: var(--font-headline);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.assignment-subtitle {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.student-byline {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-top: 1rem;
+    border-top: 2px solid var(--color-border);
+}
+
+/* ================================
+   INFOGRAPHIC SECTIONS
+   ================================ */
+
+.infographic-section {
+    margin-bottom: 5rem;
+}
+
+.viz-number {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.infographic-title {
+    font-family: var(--font-headline);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+.infographic-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+    margin-bottom: 2.5rem;
+}
+
+/* ================================
+   DATA BLOCK
+   ================================ */
+
+.data-block {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border: 1px solid var(--color-border);
+}
+
+.chart-area {
+    margin: 2rem 0 3rem;
+    background: #ffffff;
+}
+
+.chart-area iframe {
+    max-width: 100%;
+    border: none;
+}
+
+/* ================================
+   DATA CONTEXT
+   ================================ */
+
+.data-context {
+    padding: 2rem 0;
+    border-top: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-border);
+    margin: 3rem 0;
+}
+
+.data-context h3 {
+    font-family: var(--font-headline);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.data-context ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data-context li {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    border-left: 3px solid var(--color-accent);
+    margin-bottom: 1rem;
+    background: var(--color-bg);
+    padding-left: 1.5rem;
+}
+
+.data-context strong {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+/* ================================
+   METHODOLOGY BOX
+   ================================ */
+
+.methodology-box {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-left: 4px solid var(--color-black);
+    margin-top: 3rem;
+}
+
+.methodology-box h4 {
+    font-family: var(--font-headline);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.methodology-box p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.methodology-box p:last-child {
+    margin-bottom: 0;
+}
+
+.methodology-box strong {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.assignment-footer {
+    background: #ffffff;
+    padding: 3rem 0;
+    border-top: 4px solid var(--color-black);
+    margin-top: 5rem;
+}
+
+.assignment-footer p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+.assignment-footer strong {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.copyright {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-gray);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 991px) {
+    .assignment-title {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+    }
+    
+    .assignment-subtitle {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    
+    .infographic-title {
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+    }
+    
+    .infographic-subtitle {
+        font-size: 1.15rem;
+    }
+    
+    .data-block {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .assignment-header {
+        padding: 3rem 0 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .assignment-title {
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+    }
+    
+    .assignment-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .infographic-section {
+        margin-bottom: 4rem;
+    }
+    
+    .infographic-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+    
+    .infographic-subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+    
+    .data-block {
+        padding: 1.5rem;
+    }
+    
+    .data-context {
+        padding: 1.5rem 0;
+        margin: 2rem 0;
+    }
+    
+    .data-context li {
+        padding-left: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .methodology-box {
+        padding: 1.5rem;
+    }
+    
+    .assignment-footer {
+        padding: 2.5rem 0;
+        margin-top: 4rem;
+    }
+}
+
+/* ================================
+   PRINT STYLES
+   ================================ */
+
+@media print {
+    body {
+        font-size: 12pt;
+        background: white;
+    }
+    
+    .assignment-title {
+        font-size: 28pt;
+    }
+    
+    .infographic-title {
+        font-size: 20pt;
+    }
+    
+    .data-block {
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    
+    .infographic-section {
+        page-break-after: always;
+    }
+    
+    .infographic-section:last-of-type {
+        page-break-after: auto;
+    }
+}
+
+/* ================================
+   ACCESSIBILITY
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
